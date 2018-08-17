@@ -7,7 +7,7 @@ from winsound import Beep
 VISINA = 500
 SIRINA = 900
 VELIKOST = 30
-HITROST_OVIRE = 0.45
+HITROST_OVIRE = 0.40
 RDECA, RUMENA, ZELENA, CRNA, MODRA, CIAN, MAGENTA = 'rdeca', 'rumena', 'zelena', 'crna', 'modra', 'cian', 'magenta'
 LEVO, DESNO, GOR, DOL = 'levo', 'desno', 'gor', 'dol'
 barve = [CIAN, MAGENTA, RDECA, RUMENA, ZELENA, CRNA, MODRA]
@@ -323,8 +323,9 @@ class Igra:
         self.osvezi_tocke()
 
 
-okno = tk.Tk()
-okno.title('Tepač')
-okno.iconbitmap('raketa.ico')
-moj_program = Igra(okno)
-okno.mainloop()
+if __name__ == "__main__":
+    okno = tk.Tk()
+    okno.title('Tepač')
+    okno.iconbitmap('raketa.ico')
+    moj_program = Igra(okno)
+    okno.mainloop()
