@@ -9,4 +9,4 @@ Na poti pa na vašo srečo niso le ovire. Najdemo lahko tudi `jabolka`, ki pa pl
 Vendar pazite! Če vam ovira v obliki kroga uide, boste s strani svojih sotepačev, kateri letijo za vami in so bili s tem ogroženi, kaznovani, tako da odvržete vsa pridobljena jabolka in izgubite še nekaj dodatnih točk. Ampak, kot se bi vas vesolje usmililo vam ob tem pošilja počasnejše ovire in po vsej verjetnosti tudi malo večje, kar pa lahko izkoristite v svojo prid, tako da jih lažje zadanete.
 Če želite si lahko med letom vzamete tudi odmor. To storite s pritiskom na gumb `P`, ki vam omogoča ogled vaše najlubše serije ravno med bitko za vaše življenje in bitko za vesolje.
 
-Upam da boste v igri uživali!
+Upam, da boste v igri uživali!
