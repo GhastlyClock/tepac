@@ -2,7 +2,16 @@ import random
 from math import sqrt
 import time
 import tkinter as tk
-from winsound import Beep
+try:
+    import winsound
+except ImportError:
+    import os
+    def Beep(frequency,duration):
+        # moraš ga naložiti! (apt-get install beep)
+        os.system('beep -f %s -l %s' % (frequency,duration))
+else:
+    def Beep(frequency,duration):
+        winsound.Beep(frequency,duration)
 
 VISINA = 500
 SIRINA = 900
@@ -326,6 +335,12 @@ class Igra:
 if __name__ == "__main__":
     okno = tk.Tk()
     okno.title('Tepač')
-    okno.iconbitmap('raketa.ico')
+    
+    ''' *.ico ne dela na Linux-u! '''
+    try:
+        okno.iconbitmap('raketa.ico')
+    except:
+        pass
+    
     moj_program = Igra(okno)
     okno.mainloop()
