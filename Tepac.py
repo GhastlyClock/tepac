@@ -7,8 +7,10 @@ try:
 except ImportError:
     import os
     def Beep(frequency,duration):
-        # moraš ga naložiti! (apt-get install beep)
-        os.system('beep -f %s -l %s' % (frequency,duration))
+        # moraš naložiti "sox"! (apt-get install sox)
+        dur = duration
+        freq = frequency
+        os.system('play --no-show-progress --null --channels 1 synth %s sine %f' % (dur, freq))
 else:
     def Beep(frequency,duration):
         winsound.Beep(frequency,duration)
